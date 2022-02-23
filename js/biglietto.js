@@ -1,13 +1,13 @@
-const kilometer = prompt("Quanti chilometri vuoi percorrere?");
+const kilometer = parseInt(prompt("Quanti chilometri vuoi percorrere?"));
 console.log(kilometer);
 document.getElementById('kilometer').innerHTML += kilometer + ' km';
 
-const age = prompt("Quanti anni hai?");
+const age = parseInt(prompt("Quanti anni hai?"));
 console.log(age);
 
 const priceKm = 0.21;
 
-let price = kilometer * 0.21;
+let price = kilometer * priceKm;
 console.log(price);
 
 let priceMinorenni = price - ((price * 20) / 100);
